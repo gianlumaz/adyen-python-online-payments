@@ -38,8 +38,7 @@ def create_app():
     @app.route('/api/sessions', methods=['POST'])
     def sessions():
         host_url = request.host_url 
-        #host_url = request.host_url 
-        host_url = "https://8949b923f75af6b1-AdyenTechSupportIndia-checkout-live.adyenpayments.com/checkout/71" 
+        host_url = "https://checkout-test.adyen.com/checkout/v71/sessions" 
 
         return adyen_sessions(host_url)
 
